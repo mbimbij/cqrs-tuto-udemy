@@ -11,7 +11,17 @@
 
     <artifactId>user-cmd-api</artifactId>
 
+    <properties>
+        <axon.version>4.5.3</axon.version>
+    </properties>
+
     <dependencies>
+        <dependency>
+            <artifactId>user-core</artifactId>
+            <version>1.0.0</version>
+            <groupId>org.example</groupId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
@@ -22,9 +32,6 @@
             <version>${axon.version}</version>
         </dependency>
     </dependencies>
-    <properties>
-        <axon.version>4.5.3</axon.version>
-    </properties>
 
     <build>
         <plugins>

@@ -11,4 +11,21 @@
 
     <artifactId>user-core</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.axonframework.extensions.mongo</groupId>
+            <artifactId>axon-mongo</artifactId>
+            <version>${axon-mongo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-spring</artifactId>
+            <version>${axon.version}</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <axon-mongo.version>4.4</axon-mongo.version>
+        <axon.version>4.5.3</axon.version>
+    </properties>
+
 </project>
